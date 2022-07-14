@@ -1,0 +1,42 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ProximaNovaThin;
+}
+ol {  
+  list-style-type: none;  
+  font-weight: bold;  
+  font-size: 20px;  
+}  
+ul {  
+  list-style-type: none;  
+  font-weight: bold;  
+  font-size: 20px;  
+} 
+a { 
+  text-decoration: none;
+}
+body { 
+  background-image: url('./../img/svg/Artboard 1.svg');
+  background-repeat: repeat;
+}
+main { 
+  padding: 1% 7% 0px 7%;
+}
+input, button, textarea{
+  border: none;
+}
+textarea:focus,
+input:focus{
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
+.hide-on-desktop{
+  display: none !important;
+}
+@media(max-width:600px){
+  .hide-on-desktop{display: flex !important;}
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: NaughtyMonster;
+  src: url('./font/NaughtyMonster.otf');
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url('./font/Proxima Nova Black.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('./font/Proxima Nova Bold.otf');
+  font-weight:800;
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url('./font/Proxima Nova Extrabold.otf');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url('./font/Proxima Nova Thin.otf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url('./font/ProximaNova-Regular.otf');
+  font-weight: normal;
+}

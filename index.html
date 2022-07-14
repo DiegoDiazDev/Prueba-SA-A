@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/global.css" rel="stylesheet" type="text/css" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/font.css" rel="stylesheet" type="text/css" />
+  <link href="./css/flexbox-lib.css" rel="stylesheet" type="text/css" />
+  <title>Prueba de desarrollo</title>
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header class="header flex-between-center">
+      <div class="header__logo flex-start-center">
+        <img class="logo" alt="logo de mascota chop" src="./img/logo.png" />
+        <div id="menu-btn" class="menu-btn flex-center-center hide-on-desktop ">
+          <img src="./img/svg/menus.png" alt="Ícono de menú" />
+        </div>
+      </div>
+      <nav class="header__nav flex-center-center"> 
+        <!-- Links del menu -->
+        <ul class="nav-links flex-center-center">
+          <li class="nav-li nav-li--active">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-li">
+            <a href="#">¿Qué somos?</a>
+          </li>
+          <li class="nav-li">
+            <a href="#">Instalar</a>
+          </li>
+          <li class="nav-li">
+            <a href="#">Dinos Hola!</a>
+          </li>
+        </ul>
+
+        <!-- Social media del menú -->
+        <a 
+          href="#" 
+          target="_blank" 
+          class="nav-social-icons flex-center-center"
+        >
+          <img src="./img/svg/instagram.png"  alt="instagram logo"/>
+        </a>
+        <a 
+          href="#" 
+          target="_blank" 
+          class="nav-social-icons flex-center-center"
+        >
+          <img src="./img/svg/facebook.png"  alt="facebook logo"/>
+        </a>
+      </nav>
+    </header>
+    <!-- Menu movil -->
+    <section id="menu-movil" class="menu-movil flex-center-center">
+      <div id="btn-menu-hide" class="menu-movil__close-btn flex-center-center">
+        <img src="./img/svg/close.png" />
+      </div>
+      <ul class="menu-movil-links flex-center-center">
+        <li class="menu-movil-li flex-center-center">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-movil-li flex-center-center">
+          <a href="#">¿Qué somos?</a>
+        </li>
+        <li class="menu-movil-li flex-center-center">
+          <a href="#">Instalar</a>
+        </li>
+        <li class="menu-movil-li flex-center-center menu--movil-li--active">
+          <a href="#">Dinos Guau!</a>
+        </li>
+      </ul>
+      <div class="menu-movil__social-media flex-center-center">
+        <a 
+          href="#" 
+          target="_blank" 
+          class="nav-social-icons flex-center-center"
+        >
+          <img src="./img/svg/instagram.png"  alt="instagram logo"/>
+        </a>
+        <a 
+          href="#" 
+          target="_blank" 
+          class="nav-social-icons flex-center-center"
+        >
+          <img src="./img/svg/facebook.png"  alt="facebook logo"/>
+        </a>
+      </div>
+    </section>
+    <!-- Hero -->
+    <section class="hero flex-between-center">
+      <aside class="hero-about flex-start-center">
+        <h1 class="hero-about__title">
+          La mejor app para concentir a<br />
+          <span 
+            class="hero-about__title--big-text flex-start-center">
+            tu mascota
+          </span>
+        </h1>
+        <p class="hero-about__text">
+          En <b class="hero-about__text--bold">MascotaShop</b> puedes encontrar todo lo que hará felíz a tu mascota... Sin tener que salir de tu casa
+        </p>
+        <div class="hero-about__button flex-center-center">
+          <button class="about-btn">
+            Instalar
+          </button>
+        </div>
+        <div class="hero-about__images-stores flex-around-center hide-on-desktop">
+          <img src="./img/svg/btn_google.svg"  alt="Playstore logo"/>
+          <img src="./img/svg/btn_ios.svg"  alt="Appstore logo"/>
+        </div>
+        <p class="hero-text-center">
+          ¡Suscribete y recibe las novedades de <br>
+          MascotShop!
+        </p>
+      </aside>
+      <aside class="hero-image flex-start-center">
+        <img class="hero-image__image" src="./img/svg/hero.svg" alt="imagen de perritos" />
+      </aside>
+      <aside class="hero-form flex-between-center">
+        <form class="hero-form__form flex-start-center">
+          <input placeholder="Ingresa tu correo" class="form-input">
+          <button class="form-btn">Suscribirse</button>
+        </form>
+        <div class="hero-form__images flex-end-center">
+          <img src="./img/svg/btn_google.svg"  alt="Playstore logo"/>
+          <img src="./img/svg/btn_ios.svg"  alt="Appstore logo"/>
+        </div>
+      </aside>
+    </section>
+    <!-- ¿Qué es mascotashop? -->
+    <section class="what-is flex-between-center">
+      <img src="./img/svg/huella.svg" class="what-is__image-background" alt="Huella de perrito" />
+      <div class="what-if__text-container">
+        <h2 class="what-if-title">
+          ¿Qué es MascotaShop?
+        </h2>
+        <p class="what-if-text">
+          <b>MascotaShop</b> es una aplicación móvil hecha para
+          consentir a tu mascota, porque sabemos que son
+          parte esencial de tu familia!<br>
+          Te presentamos algunos de sus beneficios
+        </p>
+      </div>
+      <div class="what-if__step-container flex-center-center">
+        <img class="what-if-border-image" src="./img/svg/border_icon_1.svg" />
+        <img class="what-if-shape-image" src="./img/svg/bg_icon_1.svg" />
+        <img class="what-if-icons-image" src="./img/svg/assets_icon_1.svg" />
+        <img class="what-if-icon-image" src="./img/svg/icon_1.svg" />
+        <div class="what-if-number what-if-number--bottom flex-center-center">
+          1
+        </div>
+      </div>
+      <div class="what-if__step-container flex-center-center">
+        <img class="what-if-border-image" src="./img/svg/border_icon_2.svg" />
+        <img class="what-if-shape-image" src="./img/svg/bg_icon_2.svg" />
+        <img class="what-if-icons-image" src="./img/svg/assets_icon_2.svg" />
+        <img class="what-if-icon-image" src="./img/svg/icon_2.svg" />
+        <div class="what-if-number what-if-number--bottom flex-center-center">
+          2
+        </div>
+      </div>
+      <div class="what-if__step-container flex-center-center">
+        <img class="what-if-border-image" src="./img/svg/border_icon_3.svg" />
+        <img class="what-if-shape-image" src="./img/svg/bg_icon_3.svg" />
+        <img class="what-if-icons-image" src="./img/svg/assets_icon_3.svg" />
+        <img class="what-if-icon-image" src="./img/svg/icon_3.svg" />
+        <div class="what-if-number what-if-number--top-left flex-center-center">
+          3
+        </div>
+      </div>
+      <div class="what-if__step-container flex-center-center">
+        <img class="what-if-border-image" src="./img/svg/border_icon_4.svg" />
+        <img class="what-if-shape-image" src="./img/svg/bg_icon_4.svg" />
+        <img class="what-if-icons-image" src="./img/svg/assets_icon_4.svg" />
+        <img class="what-if-icon-image" src="./img/svg/icon_4.svg" />
+        <div class="what-if-number what-if-number--bottom-left flex-center-center">
+          4
+        </div>
+      </div>
+      <div class="what-if__step-container flex-center-center">
+        <img class="what-if-border-image" src="./img/svg/border_icon_5.svg" />
+        <img class="what-if-shape-image" src="./img/svg/bg_icon_5.svg" />
+        <img class="what-if-icons-image" src="./img/svg/assets_icon_5.svg" />
+        <img class="what-if-icon-image" src="./img/svg/icon_5.svg" />
+        <div class="what-if-number what-if-number--bottom flex-center-center">
+          5
+        </div>
+      </div>
+    </section>
+    
+    <!-- About -->
+    <section class="about flex-center-center">
+      <aside class="about-image flex-center-center">
+        <div class="about-image__phones flex-center-center">
+          <img class="image-phones" src="./img/phones.png" alt="Telefonos" />
+        </div>
+        <div class="about-image__app-store-logos flex-center-center">
+          <img class="about-logos" src="./img/svg/btn_google_color.svg" alt="Logo de playstore" />
+          <img class="about-logos" src="./img/svg/btn_ios.svg" alt="Logo de appstore" />
+        </div>
+        <img class="about-image__image-background" src="./img/svg/bg_bone.svg" />
+      </aside>
+      <aside class="about-info flex-center-center">
+        <p class="about-info__info">
+          Disfruta de todos los beneficios que solo MascotaShop te brinda para tu comodidad
+          y la de tu mascota, en la palma de tu mano.<br /><br />
+          Instálala y entérate por tí mismo de todas sus funciones.
+        </p>
+        <div class="about-info__image flex-center-center">
+          <img class="about-info-image" src="./img/svg/app_2.svg" alt="" />
+        </div>
+      </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer flex-center-center">
+      <aside class="footer-image flex-center-center">
+        <img class="footer-image__image" src="./img/svg/pet.svg" alt="Imagen d eun perrito" />
+      </aside>
+      <aside class="footer-form flex-center-center">
+        <form class="footer-form__form flex-between-center">
+          <div class="footer-form-title flex-start-center">
+            <img src="./img/svg/mail.png" alt="ícono de correo electrónico" />
+            <h3>
+              Info@MascotaShop.pet
+            </h3>
+          </div>
+          <div class="footer-text-area">
+            <div class="footer-text-area__label">
+              Mensaje
+            </div>
+            <textarea class="footer-text-area__area"></textarea>
+          </div>
+          
+          <div class="footer-input-container">
+            <div class="footer-input-container__label">
+              Correo
+            </div>
+            <input class="footer-input-container__input">
+          </div>
+          
+          <div class="footer-input-container">
+            <div class="footer-input-container__label">
+              Nombre
+            </div>
+            <input class="footer-input-container__input">
+          </div>
+          <div class="footer-button flex-center-center">
+            <button class="footer-btn__btn flex-center-center">
+              Enviar
+              <img src="./img/svg/send.png" alt="ícono de avión" />
+            </button>
+          </div>
+        </form>
+      </aside>
+    </footer>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+</html>
